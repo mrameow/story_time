@@ -1,3 +1,4 @@
+
 const config = {
-    MY_API_KEY: "12345-ABCDE-SECRET"
+    MY_API_KEY: 'YOUR_API_KEY'
 };
