@@ -117,7 +117,7 @@
         wordDisplay.textContent = "GENERATING...";
         
         try {
-            const apiKey = config.MY_API_KEY; // Set by environment
+            const apiKey = "AIzaSyBO8jdfADp2-62VAI1GQ4jFfI_mdcyqpvg"; // Set by environment
             
             const prompt = `Write a short, engaging, first-person Reddit-style story (like r/confessions, r/AITA, or r/TIFU). 
             Topic: ${topic}.
@@ -127,7 +127,7 @@
             3. Do not include a title or "TLDR".
             4. Start directly with the story.`;
 
-            const response = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`, {
+            const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
