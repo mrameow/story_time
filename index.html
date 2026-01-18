@@ -367,7 +367,7 @@
         wordDisplay.textContent = "GENERATING...";
         
         try {
-            const apiKey = ""; // Set by environment
+            const apiKey = config.MY_API_KEY; // Set by environment
             
             const prompt = `Write a short, engaging, first-person Reddit-style story (like r/confessions, r/AITA, or r/TIFU). 
             Topic: ${topic}.
