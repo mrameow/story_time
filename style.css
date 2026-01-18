@@ -109,6 +109,7 @@ body {
         /* Seek/Speed Range Styling */
         input[type=range] {
             -webkit-appearance: none;
+            appearance: none;
             background: transparent;
             width: 100%;
         }
